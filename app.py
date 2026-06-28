@@ -87,12 +87,11 @@ col1, col2 = st.columns([1, 3.5], vertical_alignment="center")
 
 with col1:
     # Safely load your premium circular icon without asset path errors
-    LOGO_URL = "C:\Users\User\Downloads\logo.jpeg"
+    LOGO_URL = logo.jpeg
     st.image(LOGO_URL, use_container_width=True)
 
 with col2:
     st.title("Arch-Eco Contextual Spatial Planner")
-    st.subheader("Nexus AI Accelerator Project")
 
 # Description paragraph flows elegantly right below the header row
 st.write("Upload your 2D sketch and select your city to optimize your design for local climate constraints.")
