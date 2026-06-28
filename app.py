@@ -8,39 +8,49 @@ st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 # This changes the app background to a welcoming, professional, ultra-soft green tint (#f0f4f1)
 # and styles the main containers with your new premium sage/forest palette.
 # --- CUSTOM EXPERT BRAND COLORS ---
+# --- CUSTOM EXPERT BRAND COLORS ---
 st.markdown(
     """
     <style>
-    /* This sets the background color of the whole app */
+    /* 1. App Background */
     .stApp {
-        background-color: #f2f5f3;
+        background-color: #fcfbfa; /* Premium Linen White background */
     }
     
-    /* This changes the color of the big Title */
+    /* 2. Main Typography Colors */
     h1 {
         color: #1e3e2b !important; /* Deep Forest Green */
     }
-    
-    /* This changes the color of the Subtitle */
     h3 {
         color: #5a8266 !important; /* Muted Sage Green */
     }
-    
-    /* This changes the color of the general paragraph/body text */
     .stApp p, .stApp label {
-        color: #1e3e2b !important; /* Deep Forest Green for clean reading */
+        color: #1e3e2b !important; /* Deep Forest Green for labels */
     }
     
-    /* This designs the button */
+    /* 3. FIX: Dropdown Input & File Uploader Text Color to White */
+    /* This makes the selected city name and uploader details readable against dark inputs */
+    .stSelectbox div[data-baseweb="select"] div {
+        color: white !important;
+    }
+    .stFileUploader section div {
+        color: white !important;
+    }
+    .stFileUploader small {
+        color: #cccccc !important; /* Soft light gray for the "200MB per file" subtext */
+    }
+    
+    /* 4. Action Button Styling */
     div.stButton > button:first-child {
         background-color: #1e3e2b;
-        color: white;
+        color: white !important;
         border-radius: 6px;
         border: none;
+        font-weight: bold;
     }
     div.stButton > button:first-child:hover {
         background-color: #5a8266;
-        color: white;
+        color: white !important;
     }
     </style>
     """,
