@@ -87,7 +87,7 @@ col1, col2 = st.columns([1, 3.5], vertical_alignment="center")
 
 with col1:
     # Safely load your premium circular icon without asset path errors
-   st.image("logo.png", use_container_width=True)
+   st.image("logo.jpeg", use_container_width=True)
 
 with col2:
     st.title("Arch-Eco Contextual Spatial Planner")
