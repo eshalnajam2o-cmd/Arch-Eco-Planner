@@ -28,15 +28,17 @@ if st.button("Optimize My Design"):
         files = {"file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)}
         data = {"city": city}
         
-        try:
+      try:
             # This line physically sends the image and city over the internet to n8n
             response = requests.post(N8N_WEBHOOK_URL, files=files, data=data)
             
             if response.status_code == 200:
                 st.success("Analysis Complete!")
-                # Display the markdown report returned from n8n
+                
+                # 1. Display the report on the screen
                 report_text = response.text
                 st.markdown(report_text)
+                
                 st.write("---") # This adds a clean visual divider line
                 
                 # 2. Add the Download Button right underneath the text
@@ -45,6 +47,7 @@ if st.button("Optimize My Design"):
                     data=report_text,
                     file_name="arch_eco_optimization_report.txt",
                     mime="text/plain"
+                )
             else:
                 st.error("Error communicating with the AI workflow engine.")
         except Exception as e:
