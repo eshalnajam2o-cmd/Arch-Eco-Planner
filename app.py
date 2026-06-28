@@ -33,13 +33,20 @@ st.markdown(
     .stSelectbox div[data-baseweb="select"] div {
         color: white !important;
     }
-    .stFileUploader section div {
+   .stFileUploader section div {
         color: white !important;
     }
-    .stFileUploader small {
-        color: #ffffff !important; /* Soft light gray for the "200MB per file" subtext */
+    
+    /* Forces the 'Browse files' / 'Upload' button text to white */
+    .stFileUploader button, 
+    .stFileUploader button p, 
+    .stFileUploader button span {
+        color: white !important;
     }
     
+    .stFileUploader small {
+        color: #cccccc !important; 
+    }
     /* 4. Action Button Styling */
     div.stButton > button:first-child {
         background-color: #1e3e2b;
@@ -48,15 +55,24 @@ st.markdown(
         border: none;
         font-weight: bold;
     }
+   /* FORCES THE "Optimize My Design" TEXT INSIDE THE BUTTON TO BE WHITE */
+    div.stButton > button:first-child *,
+    div.stButton > button:first-child p,
+    div.stButton > button:first-child span {
+        color: white !important;
+    }
+    
+    /* Hover state styling */
     div.stButton > button:first-child:hover {
-        background-color: #5a8266;
+        background-color: #5a8266 !important;
+    }
+    div.stButton > button:first-child:hover * {
         color: white !important;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
-
 # --- MAIN INTERFACE DISPLAY ---
 st.title("🏛️ Arch-Eco Contextual Spatial Planner")
 st.write("Upload your 2D sketch and select your city to optimize your design for local climate constraints.")
