@@ -10,7 +10,23 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color:#1E3E2B;
+        background-color: #f0f4f1;
+    }
+    h1 {
+        color: #1e3e2b !important; /* Deep Forest/Emerald Green */
+    }
+    h3 {
+        color: #5a8266 !important; /* Muted Sage Green */
+    }
+    div.stButton > button:first-child {
+        background-color: #1e3e2b;
+        color: white;
+        border-radius: 6px;
+        border: none;
+    }
+    div.stButton > button:first-child:hover {
+        background-color: #5a8266;
+        color: white;
     }
     </style>
     """,
