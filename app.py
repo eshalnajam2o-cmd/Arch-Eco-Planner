@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-
+st.image("logo.ipeg", use_container_width=True)
 # 1. Page Title and Layout Setup
 st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 
@@ -9,70 +9,6 @@ st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 # and styles the main containers with your new premium sage/forest palette.
 # --- CUSTOM EXPERT BRAND COLORS ---
 # --- CUSTOM EXPERT BRAND COLORS ---
-st.markdown(
-    """
-    <style>
-    /* 1. App Background */
-    .stApp {
-        background-color: #fcfbfa; /* Premium Linen White background */
-    }
-    
-    /* 2. Main Typography Colors */
-    h1 {
-        color: #1e3e2b !important; /* Deep Forest Green */
-    }
-    h3 {
-        color: #5a8266 !important; /* Muted Sage Green */
-    }
-    .stApp p, .stApp label {
-        color: #1e3e2b !important; /* Deep Forest Green for labels */
-    }
-    
-    /* 3. FIX: Dropdown Input & File Uploader Text Color to White */
-    /* This makes the selected city name and uploader details readable against dark inputs */
-    .stSelectbox div[data-baseweb="select"] div {
-        color: white !important;
-    }
-   .stFileUploader section div {
-        color: white !important;
-    }
-    
-    /* Forces the 'Browse files' / 'Upload' button text to white */
-    .stFileUploader button, 
-    .stFileUploader button p, 
-    .stFileUploader button span {
-        color: white !important;
-    }
-    
-    .stFileUploader small {
-        color: #cccccc !important; 
-    }
-    /* 4. Action Button Styling */
-    div.stButton > button:first-child {
-        background-color: #1e3e2b;
-        color: white !important;
-        border-radius: 6px;
-        border: none;
-        font-weight: bold;
-    }
-   /* FORCES THE "Optimize My Design" TEXT INSIDE THE BUTTON TO BE WHITE */
-    div.stButton > button:first-child *,
-    div.stButton > button:first-child p,
-    div.stButton > button:first-child span {
-        color: white !important;
-    }
-    
-    /* Hover state styling */
-    div.stButton > button:first-child:hover {
-        background-color: #5a8266 !important;
-    }
-    div.stButton > button:first-child:hover * {
-        color: white !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 # --- MAIN INTERFACE DISPLAY ---
 st.title("🏛️ Arch-Eco Contextual Spatial Planner")
 st.write("Upload your 2D sketch and select your city to optimize your design for local climate constraints.")
