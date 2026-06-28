@@ -1,10 +1,12 @@
 import streamlit as st
 import requests
-
+#--- ADD LOGO HERE ---
+# This displays your custom app logo cleanly centered on your app dashboard
+st.image("logo.png", use_container_width=True)
 # 1. Page Title and Styling
 st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
-st.title("🏛️ Arch-Eco Contextual Spatial Planner")
-st.subheader("Nexus AI Accelerator Project")
+st.title(" Arch-Eco Contextual Spatial Planner")
+
 st.write("Upload your 2D sketch and select your city to optimize your design for local climate constraints.")
 
 # 2. User Inputs
