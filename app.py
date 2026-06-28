@@ -1,8 +1,10 @@
 import streamlit as st
 import requests
-#--- ADD LOGO HERE ---
-# This displays your custom app logo cleanly centered on your app dashboard
-st.image("logo.png", use_container_width=True)
+# --- LOGO DESIGN ---
+# Using a secure direct web link ensures your logo loads perfectly without file errors!
+LOGO_URL = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+
+st.image(LOGO_URL, use_container_width=True)
 # 1. Page Title and Styling
 st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 st.title(" Arch-Eco Contextual Spatial Planner")
