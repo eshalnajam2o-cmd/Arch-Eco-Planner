@@ -21,14 +21,14 @@ if st.button("Optimize My Design"):
         st.info("Processing your design with human design DNA and AI analysis...")
         
         # --- CONNECTING TO N8N ---
-        # Replace the URL below with your actual n8n webhook URL once we create it in the next step
+        # Replace the URL below with your actual n8n webhook URL
         N8N_WEBHOOK_URL = "https://eshalnajam.app.n8n.cloud/webhook-test/archeco-receiver"
         
         # Package the data to send to n8n
         files = {"file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)}
         data = {"city": city}
         
-      try:
+        try:
             # This line physically sends the image and city over the internet to n8n
             response = requests.post(N8N_WEBHOOK_URL, files=files, data=data)
             
@@ -39,9 +39,9 @@ if st.button("Optimize My Design"):
                 report_text = response.text
                 st.markdown(report_text)
                 
-                st.write("---") # This adds a clean visual divider line
+                st.write("---") # Visual divider line
                 
-                # 2. Add the Download Button right underneath the text
+                # 2. Add a clean Download Button for your users
                 st.download_button(
                     label="📥 Download Architecture Report (.txt)",
                     data=report_text,
