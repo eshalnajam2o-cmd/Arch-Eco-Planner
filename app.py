@@ -22,7 +22,7 @@ if st.button("Optimize My Design"):
         
         # --- CONNECTING TO N8N ---
         # Replace the URL below with your actual n8n webhook URL once we create it in the next step
-        N8N_WEBHOOK_URL = "https://your-n8n-instance.com/webhook/your-unique-id"
+        N8N_WEBHOOK_URL = "https://eshalnajam.app.n8n.cloud/webhook-test/archeco-receiver"
         
         # Package the data to send to n8n
         files = {"file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)}
