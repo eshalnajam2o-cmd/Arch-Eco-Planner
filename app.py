@@ -1,9 +1,28 @@
 import streamlit as st
 import requests
-# --- LOGO DESIGN ---
-# Using a secure direct web link ensures your logo loads perfectly without file errors
+# 1. Page Title and Layout Setup
+st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 
-st.image("logo.png", use_container_width=True)
+# --- CUSTOM BACKGROUND & THEME COLOR ---
+# This changes the app background to a clean, soft architectural slate/light gray tone
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #f4f6f7;
+    }
+    </style>
+    """,
+    unsafe_allow_index=True,
+    unsafe_allow_html=True
+)
+
+# --- TOP LEFT LOGO POSITIONING ---
+# Moving the new circular logo icon directly into the top left sidebar space
+with st.sidebar:
+    st.image("logo.png", use_container_width=True)
+    st.write("---")
+    st.caption("📍 Core System Active")
 # 1. Page Title and Styling
 st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 st.title(" Arch-Eco Contextual Spatial Planner")
