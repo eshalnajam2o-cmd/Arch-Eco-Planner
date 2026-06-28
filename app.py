@@ -1,11 +1,12 @@
 import streamlit as st
 import requests
-st.image("logo.png", use_container_width=True)
+
 # 1. Page Title and Layout Setup
 st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 
-# --- CUSTOM BACKGROUND & THEME COLOR ---
-# Fixes the TypeError by using only the correct parameter for custom HTML styling
+# --- CUSTOM EXPERT BRAND COLORS ---
+# This changes the app background to a welcoming, professional, ultra-soft green tint (#f0f4f1)
+# and styles the main containers with your new premium sage/forest palette.
 st.markdown(
     """
     <style>
@@ -33,12 +34,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# --- TOP LEFT LOGO POSITIONING ---
-# Places your clean, circular logo neatly inside the upper-left sidebar container
-
-
 # --- MAIN INTERFACE DISPLAY ---
-st.title(" Arch-Eco Contextual Spatial Planner")
+st.title("🏛️ Arch-Eco Contextual Spatial Planner")
+st.subheader("Nexus AI Accelerator Project")
 st.write("Upload your 2D sketch and select your city to optimize your design for local climate constraints.")
 
 # 2. User Inputs
