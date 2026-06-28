@@ -13,7 +13,7 @@ st.markdown(
     <style>
     /* This sets the background color of the whole app */
     .stApp {
-        background-color: #f0f4f1;
+        background-color: #f2f5f3;
     }
     
     /* This changes the color of the big Title */
@@ -49,7 +49,6 @@ st.markdown(
 
 # --- MAIN INTERFACE DISPLAY ---
 st.title("🏛️ Arch-Eco Contextual Spatial Planner")
-st.subheader("Nexus AI Accelerator Project")
 st.write("Upload your 2D sketch and select your city to optimize your design for local climate constraints.")
 
 # 2. User Inputs
