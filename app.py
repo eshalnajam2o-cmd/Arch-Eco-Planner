@@ -3,7 +3,7 @@ import requests
 # --- LOGO DESIGN ---
 # Using a secure direct web link ensures your logo loads perfectly without file errors
 
-st.image("logo.jpeg", use_container_width=True)
+st.image("logo.png", use_container_width=True)
 # 1. Page Title and Styling
 st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 st.title(" Arch-Eco Contextual Spatial Planner")
