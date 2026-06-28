@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
-
+st.image("logo.png", use_container_width=True)
+st.image("logo.png", layout="top left")
 # 1. Page Title and Layout Setup
 st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 
@@ -19,10 +20,7 @@ st.markdown(
 
 # --- TOP LEFT LOGO POSITIONING ---
 # Places your clean, circular logo neatly inside the upper-left sidebar container
-with st.sidebar:
-    st.image("logo.png", use_container_width=True)
-    st.write("---")
-    st.caption("📍 Core System Active")
+
 
 # --- MAIN INTERFACE DISPLAY ---
 st.title(" Arch-Eco Contextual Spatial Planner")
