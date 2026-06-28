@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 st.image("logo.png", use_container_width=True)
-st.image("logo.png", layout="top left")
 # 1. Page Title and Layout Setup
 st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 
