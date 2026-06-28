@@ -7,18 +7,31 @@ st.set_page_config(page_title="Arch-Eco Spatial Planner", layout="centered")
 # --- CUSTOM EXPERT BRAND COLORS ---
 # This changes the app background to a welcoming, professional, ultra-soft green tint (#f0f4f1)
 # and styles the main containers with your new premium sage/forest palette.
+# --- CUSTOM EXPERT BRAND COLORS ---
 st.markdown(
     """
     <style>
+    /* This sets the background color of the whole app */
     .stApp {
         background-color: #f0f4f1;
     }
+    
+    /* This changes the color of the big Title */
     h1 {
-        color: #1e3e2b !important; /* Deep Forest/Emerald Green */
+        color: #1e3e2b !important; /* Deep Forest Green */
     }
+    
+    /* This changes the color of the Subtitle */
     h3 {
         color: #5a8266 !important; /* Muted Sage Green */
     }
+    
+    /* This changes the color of the general paragraph/body text */
+    .stApp p, .stApp label {
+        color: #1e3e2b !important; /* Deep Forest Green for clean reading */
+    }
+    
+    /* This designs the button */
     div.stButton > button:first-child {
         background-color: #1e3e2b;
         color: white;
