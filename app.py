@@ -112,7 +112,7 @@ if st.button("Optimize My Design"):
         st.info("Processing your design with human design DNA and AI analysis...")
         
         # Change "/webhook-test/" to "/webhook/"
-N8N_WEBHOOK_URL = "https://eshalnajam.app.n8n.cloud/webhook/archeco-receiver"
+        N8N_WEBHOOK_URL = "https://eshalnajam.app.n8n.cloud/webhook/archeco-receiver"
         files = {"file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)}
         data = {"city": city}
         
