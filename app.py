@@ -37,7 +37,7 @@ st.markdown(
         color: white !important;
     }
     .stFileUploader small {
-        color: #cccccc !important; /* Soft light gray for the "200MB per file" subtext */
+        color: #ffffff !important; /* Soft light gray for the "200MB per file" subtext */
     }
     
     /* 4. Action Button Styling */
