@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: #f4f6f7;
+        background-color: #990000;
     }
     </style>
     """,
@@ -25,8 +25,7 @@ with st.sidebar:
     st.caption("📍 Core System Active")
 
 # --- MAIN INTERFACE DISPLAY ---
-st.title("🏛️ Arch-Eco Contextual Spatial Planner")
-st.subheader("Nexus AI Accelerator Project")
+st.title(" Arch-Eco Contextual Spatial Planner")
 st.write("Upload your 2D sketch and select your city to optimize your design for local climate constraints.")
 
 # 2. User Inputs
