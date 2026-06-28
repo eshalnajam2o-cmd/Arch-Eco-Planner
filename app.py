@@ -35,7 +35,16 @@ if st.button("Optimize My Design"):
             if response.status_code == 200:
                 st.success("Analysis Complete!")
                 # Display the markdown report returned from n8n
-                st.markdown(response.text)
+                report_text = response.text
+                st.markdown(report_text)
+                st.write("---") # This adds a clean visual divider line
+                
+                # 2. Add the Download Button right underneath the text
+                st.download_button(
+                    label="📥 Download Architecture Report (.txt)",
+                    data=report_text,
+                    file_name="arch_eco_optimization_report.txt",
+                    mime="text/plain"
             else:
                 st.error("Error communicating with the AI workflow engine.")
         except Exception as e:
